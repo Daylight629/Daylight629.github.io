@@ -5,16 +5,16 @@
   
   <title>冒泡排序 | cjzblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="冒泡排序1.下面我们来说以下冒泡排序的原理（1）比较相邻的元素。如果前一个元素比后一个元素大，就交换这两个元素的位置。（2）对每一对相邻元素做同样的工作，从开始第一对元素到结尾的后一对元素。终后位置的元素就是大值。例如：排序前：{4,5,6,3,2,1}   排序后：{1,2,3,4,5,6} &#x3D;&#x3D;2.下面关冒泡排序的代码&#x3D;&#x3D; 第一版冒泡排序 123456789101112131415161718">
+  <meta name="description" content="冒泡排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="冒泡排序">
 <meta property="og:url" content="https://daylight629.github.io/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="cjzblog">
-<meta property="og:description" content="冒泡排序1.下面我们来说以下冒泡排序的原理（1）比较相邻的元素。如果前一个元素比后一个元素大，就交换这两个元素的位置。（2）对每一对相邻元素做同样的工作，从开始第一对元素到结尾的后一对元素。终后位置的元素就是大值。例如：排序前：{4,5,6,3,2,1}   排序后：{1,2,3,4,5,6} &#x3D;&#x3D;2.下面关冒泡排序的代码&#x3D;&#x3D; 第一版冒泡排序 123456789101112131415161718">
+<meta property="og:description" content="冒泡排序">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200705213621781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200705220815600.gif#pic_center">
 <meta property="article:published_time" content="2020-07-19T06:59:33.867Z">
-<meta property="article:modified_time" content="2020-07-19T07:10:34.908Z">
+<meta property="article:modified_time" content="2020-07-19T08:43:53.532Z">
 <meta property="article:author" content="CJZ">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200705213621781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center">
@@ -292,7 +292,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>1.下面我们来说以下冒泡排序的原理<br>（1）比较相邻的元素。如果前一个元素比后一个元素大，就交换这两个元素的位置。<br>（2）对每一对相邻元素做同样的工作，从开始第一对元素到结尾的后一对元素。终后位置的元素就是大值。<br>例如：<br>排序前：{4,5,6,3,2,1}</p>
+        <h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><a id="more"></a>
+<p>1.下面我们来说以下冒泡排序的原理<br>（1）比较相邻的元素。如果前一个元素比后一个元素大，就交换这两个元素的位置。<br>（2）对每一对相邻元素做同样的工作，从开始第一对元素到结尾的后一对元素。终后位置的元素就是大值。<br>例如：<br>排序前：{4,5,6,3,2,1}</p>
 <p>  排序后：{1,2,3,4,5,6}<br><img src="https://img-blog.csdnimg.cn/20200705213621781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> ==2.下面关冒泡排序的代码==</p>
 <p><strong>第一版冒泡排序</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bubble</span> </span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="comment">//两两比较交换位置</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span> [] arr)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="comment">//外层比较的次数</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=arr.length-<span class="number">1</span>;i&gt;<span class="number">0</span>;i--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">//内层比较到的位置</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;i;j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(arr[j]&gt;arr[j+<span class="number">1</span>])</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="keyword">int</span> temp=arr[j];</span><br><span class="line">					arr[j]=arr[j+<span class="number">1</span>];</span><br><span class="line">					arr[j+<span class="number">1</span>]=temp;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -365,7 +366,7 @@
         <p><span>本文标题:</span><a href="/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">冒泡排序</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 CJZ 的个人博客">CJZ</a></p>
         <p><span>发布时间:</span>2020年07月19日 - 14时59分</p>
-        <p><span>最后更新:</span>2020年07月19日 - 15时10分</p>
+        <p><span>最后更新:</span>2020年07月19日 - 16时43分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="冒泡排序">https://daylight629.github.io/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</a>
             <span class="copy-path" data-clipboard-text="原文: https://daylight629.github.io/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/　　作者: CJZ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -540,6 +541,18 @@
                 
             </div>
         
+        <div class="visit">
+            <span id="busuanzi_container_site_pv" style='display:none'>
+                <span id="site-visit" >海贼到访数: 
+                    <span id="busuanzi_value_site_uv"></span>
+                </span>
+            </span>
+            <span id="busuanzi_container_page_pv" style='display:none'>
+                <span id="page-visit">, 本页阅读量: 
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+            </span>
+        </div>
     </div>
 </footer>
 
@@ -624,6 +637,19 @@
       }
     </script>
 
+
+<!-- calendar widget -->
+
+  <script src="/js/calendar.js"></script>
+  <script src="/js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    
+      $('#calendar').aCalendar('zh-CN',{single:true, root:'calendar/'});
+    
+    });
+  </script>
+
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":140,"height":260},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
