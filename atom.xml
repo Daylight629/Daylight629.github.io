@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://daylight629.github.io/"/>
-  <updated>2020-07-19T07:10:34.908Z</updated>
+  <updated>2020-07-19T07:16:23.089Z</updated>
   <id>https://daylight629.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JDK的安装与环境变量配置与Editplus配置</title>
+    <link href="https://daylight629.github.io/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/"/>
+    <id>https://daylight629.github.io/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/</id>
+    <published>2020-07-19T07:16:22.815Z</published>
+    <updated>2020-07-19T07:16:23.089Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="JDK的安装与环境变量配置与Editplus配置"><a href="#JDK的安装与环境变量配置与Editplus配置" class="headerlink" title="JDK的安装与环境变量配置与Editplus配置"></a>JDK的安装与环境变量配置与Editplus配置</h2><p>1.下面我们来先说一下jdk的下载<br>大家可以到甲骨文公司下载需要的版本<br>                   <a href="https://www.oracle.com" target="_blank" rel="noopener">oracle官网</a><br> 安装的时候初学者建议自己修改安装路径，方便配置环境变量<br> 2.下面关于环境变量的配置<br> （1）打开此电脑的属性<br>    （2）打开高级系统设置<br>    （3）打开环境变量<br>    （4）在系统变量中新建<br>    （5）名字为JAVA_HOME路径找到你安装jdk的路径复制进去就行<br>    （6）打开path的编辑 添加%JAVA_HOME%\bin 然后记得点确定<br>    （7）win+r输入cmd回车 输入javac命令 如果出现了版本号等等一系列的东西说明环境变量配置成功了<br> <img src="https://img-blog.csdnimg.cn/20200519170908447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>   <img src="https://img-blog.csdnimg.cn/20200519171044132.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 3.Editplus配置<br> 我们在使用中dos命令窗口太麻烦，所以一般使用其他的记事本工具，不过建议初学者先使用这个不要用太高级的IDE<br> （1）安装好后<br> （2）打开工具然后选择配置用户工具<br> （3）先添加工具选择应用程序<br> （4）先配置compile也就是javac命令，菜单文本你可以写我这个也可以自己定义<br> （5）命令找到jdk安装目录然后打开bin文件夹找到javac添加进去<br> （5）参数选择$(FileName)</p><p> （6）初始目录选择$(FileDir)<br> （7）记得点应用然后点确定<br> <img src="https://img-blog.csdnimg.cn/20200519174558726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> （8）配置run命令也就是java命令，菜单文本你可以写我这个也可以自己定义。<br> （9）命令找到jdk安装目录然后打开bin文件夹找到java添加进去<br> （10）参数选择(FileNameNoExt)<br> （11）初始目录为(FileDir)<br> （12）记得点应用然后点确定<br> <img src="https://img-blog.csdnimg.cn/20200519175047858.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;JDK的安装与环境变量配置与Editplus配置&quot;&gt;&lt;a href=&quot;#JDK的安装与环境变量配置与Editplus配置&quot; class=&quot;headerlink&quot; title=&quot;JDK的安装与环境变量配置与Editplus配置&quot;&gt;&lt;/a&gt;JDK的安装与环境变量配置与
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>冒泡排序</title>
