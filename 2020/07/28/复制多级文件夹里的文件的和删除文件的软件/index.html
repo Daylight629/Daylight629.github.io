@@ -3,16 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>cjzblog</title>
+  <title>复制多级文件夹里的文件的和删除文件的软件 | cjzblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="你还有许多未完成的梦 你有什么理由停下脚步">
-<meta property="og:type" content="website">
-<meta property="og:title" content="cjzblog">
-<meta property="og:url" content="https://daylight629.github.io/index.html">
+  <meta name="description" content="复制多级文件夹里的文件的和删除文件的软件主要我有点懒，然后文件分布在不同的文件夹，需要复制然后删除有点麻烦所以制作了这个小软件，界面什么的还不好看，后面有时间会优化的源代码和软件我放在了GitHub的仓库有需要的大家可以去下载。软件地址软件大概是这样子的，还有点丑大家不要介意啊，后悔有时间再优化)&#x3D;&#x3D;下面来说一下核心代码&#x3D;&#x3D; 12345678910111213141516171819&#x2F;&#x2F;遍历获取文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="复制多级文件夹里的文件的和删除文件的软件">
+<meta property="og:url" content="https://daylight629.github.io/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/index.html">
 <meta property="og:site_name" content="cjzblog">
-<meta property="og:description" content="你还有许多未完成的梦 你有什么理由停下脚步">
+<meta property="og:description" content="复制多级文件夹里的文件的和删除文件的软件主要我有点懒，然后文件分布在不同的文件夹，需要复制然后删除有点麻烦所以制作了这个小软件，界面什么的还不好看，后面有时间会优化的源代码和软件我放在了GitHub的仓库有需要的大家可以去下载。软件地址软件大概是这样子的，还有点丑大家不要介意啊，后悔有时间再优化)&#x3D;&#x3D;下面来说一下核心代码&#x3D;&#x3D; 12345678910111213141516171819&#x2F;&#x2F;遍历获取文">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200728164320105.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_30">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200728164514217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200728165126721.gif">
+<meta property="article:published_time" content="2020-07-28T08:59:23.053Z">
+<meta property="article:modified_time" content="2020-07-28T09:02:56.068Z">
 <meta property="article:author" content="CJZ">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200728164320105.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_30">
   
     <link rel="alternative" href="/atom.xml" title="cjzblog" type="application/atom+xml">
   
@@ -30,9 +36,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -44,8 +47,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -256,74 +259,15 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-CopyFile" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-复制多级文件夹里的文件的和删除文件的软件" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       
-<a href="/2020/07/28/CopyFile/" class="article-date">
-      <time datetime="2020-07-28T09:03:33.741Z" itemprop="datePublished">2020-07-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/28/CopyFile/">CopyFile</a>
-    </h1>
-  
+      <!-- 不蒜子统计 -->
+      <span id="busuanzi_container_page_pv" style='display:none' class="article-date">
+            <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+      </span>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="复制多级文件夹里的文件的和删除文件的软件"><a href="#复制多级文件夹里的文件的和删除文件的软件" class="headerlink" title="复制多级文件夹里的文件的和删除文件的软件"></a>复制多级文件夹里的文件的和删除文件的软件</h2><p>主要我有点懒，然后文件分布在不同的文件夹，需要复制然后删除有点麻烦所以制作了这个小软件，界面什么的还不好看，后面有时间会优化的源代码和软件我放在了GitHub的仓库有需要的大家可以去下载。<br><a href="https://github.com/Daylight629/CopyFile" target="_blank" rel="noopener">软件地址</a><br>软件大概是这样子的，还有点丑大家不要介意啊，后悔有时间再优化<img src="https://img-blog.csdnimg.cn/20200728164320105.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_30" alt="在这里插入图片描述">)<img src="https://img-blog.csdnimg.cn/20200728164514217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzODAzMjg1,size_16,color_FFFFFF,t_70" alt="软件界面"><br>==下面来说一下核心代码==</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//遍历获取文件</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">copyFile</span><span class="params">(File srcFile, String s, String lu, <span class="keyword">boolean</span> isdelete)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//获取文件和文件夹数组</span></span><br><span class="line">    File[] ff = srcFile.listFiles();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (File f : ff) &#123;</span><br><span class="line">        <span class="comment">//判断是否为文件夹</span></span><br><span class="line">        <span class="keyword">if</span> (f.isDirectory()) &#123;</span><br><span class="line">            copyFile(f, s,lu,isdelete);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (f.getName().endsWith(s))</span><br><span class="line">                copyFile(f,lu);</span><br><span class="line">            <span class="keyword">if</span> (isdelete)</span><br><span class="line">                deleteFile(f);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//复制文件</span></span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">copyFile</span><span class="params">(File srcFile,String lu)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">      BufferedInputStream bi = <span class="keyword">null</span>;</span><br><span class="line">      BufferedOutputStream bo = <span class="keyword">null</span>;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line"></span><br><span class="line">          File destFile = <span class="keyword">new</span> File(lu, srcFile.getName());</span><br><span class="line">          bi = <span class="keyword">new</span> BufferedInputStream(<span class="keyword">new</span> FileInputStream(srcFile));</span><br><span class="line">          bo = <span class="keyword">new</span> BufferedOutputStream(<span class="keyword">new</span> FileOutputStream(destFile));</span><br><span class="line"></span><br><span class="line">          <span class="keyword">byte</span>[] bys = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span> * <span class="number">100</span>];</span><br><span class="line">          <span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">while</span> ((len = bi.read(bys)) != -<span class="number">1</span>) &#123;</span><br><span class="line">              bo.write(bys, <span class="number">0</span>, len);</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">      &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">          e.printStackTrace();</span><br><span class="line">      &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">              bo.close();</span><br><span class="line">              bi.close();</span><br><span class="line">          &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">              e.printStackTrace();</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//删除文件</span></span><br><span class="line"><span class="function"><span class="keyword">private</span>  <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">deleteFile</span><span class="params">(File srcFile)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    srcFile.deleteOnExit();</span><br><span class="line">    srcFile.delete();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>关于图形用户界面的代码比较多，有需要的可以到上面提供的链接下载哦<br>今天就分享好这里，感谢大家观看，使用软件中发现什么bug可以给我留言哦！<br><img src="https://img-blog.csdnimg.cn/20200728165126721.gif" alt="在这里插入图片描述"></p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-复制多级文件夹里的文件的和删除文件的软件" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      
 <a href="/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/" class="article-date">
       <time datetime="2020-07-28T08:59:23.053Z" itemprop="datePublished">2020-07-28</time>
 </a>
@@ -337,12 +281,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/">复制多级文件夹里的文件的和删除文件的软件</a>
+    <h1 class="article-title" itemprop="name">
+      复制多级文件夹里的文件的和删除文件的软件
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -358,207 +309,204 @@
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>为了好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">好玩而已</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-JDK的安装与环境变量配置与Editplus配置" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      
-<a href="/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/" class="article-date">
-      <time datetime="2020-07-19T07:16:22.815Z" itemprop="datePublished">2020-07-19</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/">JDK的安装与环境变量配置与Editplus配置</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="JDK的安装与环境变量配置与Editplus配置"><a href="#JDK的安装与环境变量配置与Editplus配置" class="headerlink" title="JDK的安装与环境变量配置与Editplus配置"></a>JDK的安装与环境变量配置与Editplus配置</h2>
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a  href="/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/#more">more >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/">复制多级文件夹里的文件的和删除文件的软件</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 CJZ 的个人博客">CJZ</a></p>
+        <p><span>发布时间:</span>2020年07月28日 - 16时59分</p>
+        <p><span>最后更新:</span>2020年07月28日 - 17时02分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/" title="复制多级文件夹里的文件的和删除文件的软件">https://daylight629.github.io/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://daylight629.github.io/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/　　作者: CJZ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-冒泡排序" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      
-<a href="/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" class="article-date">
-      <time datetime="2020-07-19T06:59:33.867Z" itemprop="datePublished">2020-07-19</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">冒泡排序</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2>
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a  href="/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/#more">more >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
+
+
+
+<nav id="article-nav">
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      
-<a href="/2020/07/17/hello-world/" class="article-date">
-      <time datetime="2020-07-17T14:11:42.749Z" itemprop="datePublished">2020-07-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+    <a href="/2020/07/28/CopyFile/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
+          CopyFile
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/17/hello-world/">欢迎大家来访</a>
-    </h1>
   
+    <a href="/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JDK的安装与环境变量配置与Editplus配置</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to ！！！</p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#复制多级文件夹里的文件的和删除文件的软件"><span class="toc-number">1.</span> <span class="toc-text">复制多级文件夹里的文件的和删除文件的软件</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
-  
-  
+
+    
+        <section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'swing'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2020/07/28/CopyFile/" title="上一篇: CopyFile">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/" title="下一篇: JDK的安装与环境变量配置与Editplus配置">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/07/28/CopyFile/">CopyFile</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/28/%E5%A4%8D%E5%88%B6%E5%A4%9A%E7%BA%A7%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E8%BD%AF%E4%BB%B6/">复制多级文件夹里的文件的和删除文件的软件</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/19/JDK%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E4%B8%8EEditplus%E9%85%8D%E7%BD%AE/">JDK的安装与环境变量配置与Editplus配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/19/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">冒泡排序</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/17/hello-world/">欢迎大家来访</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
